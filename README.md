@@ -1,6 +1,6 @@
 # buscard
-Buscard database\n
-Web addresses:\n
+Buscard database  
+Web addresses:  
 List of customers and cards: http://78.27.82.203/customers.php  
 Add new customer: http://78.27.82.203/add_customer.html  
 Add new card: http://78.27.82.203/add_card.html  
