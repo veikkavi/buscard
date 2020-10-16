@@ -9,7 +9,8 @@
     $password = 'password';
     $con = mysqli_connect($host,$username,$password,$dbname);
     if (mysqli_connect_errno()) {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        echo "Failed to connect to MySQL:  " . mysqli_connect_error();
+        echo "<br> <a href='index.php'>Back</a> <br>";
     }
 
     $firstname = mysqli_real_escape_string($con, filter_input(INPUT_POST,'firstn',FILTER_SANITIZE_STRING));
@@ -23,6 +24,7 @@
         die('Error: ' . mysqli_error($con));
     }
     echo "Customer added!";
+    echo "<br> <a href='index.php'>Back</a> <br>";
 
     
 mysqli_close($con);
