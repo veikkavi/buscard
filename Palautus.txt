@@ -1,5 +1,0 @@
-Kaikki tiedostot löytyvät linkistä:
-https://github.com/veikkavi/buscard
-Salasana tietojen lisäämiseen on password.
-Jos serveri ei ole päällä kun tarkastat harjoitustyötä, voin laittaa sen päälle kunhan otat yhteyttä.
-Aion kuitenkin pitää sitä päällä päivisin.
