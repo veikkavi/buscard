@@ -13,9 +13,9 @@
         echo "<br> <a href='index.php'>Back</a> <br>";
     }
 
-    $email = mysqli_real_escape_string($con, filter_input(INPUT_POST,'em',FILTER_SANITIZE_STRING));
+    $cardnumber = mysqli_real_escape_string($con, filter_input(INPUT_POST,'cn',FILTER_SANITIZE_STRING));
     $value = mysqli_real_escape_string($con, filter_input(INPUT_POST,'vl',FILTER_SANITIZE_STRING));
-    $sql = "CALL AddValue('$email',$value)";
+    $sql = "CALL AddValue('$cardnumber',$value)";
     if (!mysqli_query($con, $sql)) {
         die('Error: ' . mysqli_error($con));
     }

@@ -13,9 +13,9 @@
         echo "<br> <a href='index.php'>Back</a> <br>";
     }
 
-    $email = mysqli_real_escape_string($con, filter_input(INPUT_POST,'em',FILTER_SANITIZE_STRING));
+    $cardnumber = mysqli_real_escape_string($con, filter_input(INPUT_POST,'cn',FILTER_SANITIZE_STRING));
     $length = mysqli_real_escape_string($con, filter_input(INPUT_POST,'le',FILTER_SANITIZE_STRING));
-    $sql = "CALL AddSeason('$email','$length')";
+    $sql = "CALL AddSeason('$cardnumber','$length')";
     if (!mysqli_query($con, $sql)) {
         die('Error: ' . mysqli_error($con));
     }
