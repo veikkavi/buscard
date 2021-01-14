@@ -1,3 +1,3 @@
 # bus card
 Bus card database  
-https://buscard.gq
+http://buscard.gq
